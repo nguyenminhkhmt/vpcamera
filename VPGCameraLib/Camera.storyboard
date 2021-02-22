@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Camera View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="CameraViewController1412" id="BYZ-38-t0r" customClass="CameraViewController" customModule="VPGCameraLib" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nyp-Q5-pwm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B3u-X2-KBp">
+                                <rect key="frame" x="0.0" y="712" width="414" height="150"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yuz-gj-psR">
+                                        <rect key="frame" x="5" y="5" width="404" height="140"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Chd-Yt-WJD">
+                                        <rect key="frame" x="319" y="5" width="90" height="140"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="eX7-aG-52a"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Chd-Yt-WJD" firstAttribute="top" secondItem="B3u-X2-KBp" secondAttribute="top" constant="5" id="5Au-c3-APQ"/>
+                                    <constraint firstAttribute="height" constant="150" id="9GM-pm-sBG"/>
+                                    <constraint firstItem="yuz-gj-psR" firstAttribute="leading" secondItem="B3u-X2-KBp" secondAttribute="leading" constant="5" id="QIb-UT-5d2"/>
+                                    <constraint firstAttribute="trailing" secondItem="yuz-gj-psR" secondAttribute="trailing" constant="5" id="abZ-s4-Ifs"/>
+                                    <constraint firstAttribute="bottom" secondItem="Chd-Yt-WJD" secondAttribute="bottom" constant="5" id="iOD-dS-zGN"/>
+                                    <constraint firstAttribute="trailing" secondItem="Chd-Yt-WJD" secondAttribute="trailing" constant="5" id="vBg-xS-1Qt"/>
+                                    <constraint firstAttribute="bottom" secondItem="yuz-gj-psR" secondAttribute="bottom" constant="5" id="y65-YM-SDi"/>
+                                    <constraint firstItem="yuz-gj-psR" firstAttribute="top" secondItem="B3u-X2-KBp" secondAttribute="top" constant="5" id="zYK-Ha-1Gt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="B3u-X2-KBp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7zo-d4-XId"/>
+                            <constraint firstItem="nyp-Q5-pwm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ezx-FC-I3H"/>
+                            <constraint firstItem="nyp-Q5-pwm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Fkq-1e-rgi"/>
+                            <constraint firstItem="nyp-Q5-pwm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Okc-oT-9np"/>
+                            <constraint firstItem="B3u-X2-KBp" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="X6J-hx-cIQ"/>
+                            <constraint firstItem="B3u-X2-KBp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="u3f-zC-1Av"/>
+                            <constraint firstAttribute="bottom" secondItem="nyp-Q5-pwm" secondAttribute="bottom" id="wjH-av-vWF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerChartView" destination="yuz-gj-psR" id="luA-lC-qAm"/>
+                        <outlet property="contentView" destination="nyp-Q5-pwm" id="RPE-rf-UCg"/>
+                        <outlet property="previewRoiIv" destination="Chd-Yt-WJD" id="KrV-Zg-pB4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+</document>
